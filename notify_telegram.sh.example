@@ -1,0 +1,10 @@
+#!/bin/bash
+# Notification hook used by dian_watch.sh (override the path with $DIAN_NOTIFY).
+# Receives the alert text as $1. Fill in your own Telegram bot token + chat id,
+# copy this file to notify_telegram.sh, and chmod +x it.
+MSG="$1"
+TOKEN="YOUR_TELEGRAM_BOT_TOKEN"
+CHAT="YOUR_CHAT_ID"
+curl -s -o /dev/null \
+  "https://api.telegram.org/bot$TOKEN/sendMessage" \
+  -d "chat_id=$CHAT" -d "parse_mode=Markdown" --data-urlencode "text=$MSG"

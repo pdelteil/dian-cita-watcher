@@ -1,0 +1,15 @@
+# runtime session state & secrets — never commit
+.tok
+.hdr
+.jar
+.lock
+*.log
+state.json
+watch.conf
+.conf.json
+.conf_citasweb.json
+.vals.json
+ciu.json
+colas.json
+ofi.json
+notify_telegram.sh

@@ -1,0 +1,5 @@
+# idEspecialidad|idOficina|idCiudad|idDepartamento|idRegional|label
+# ONLY this target: service 159 = Inscripción o actualización RUT persona natural, Medellín.
+# idOficina '*' = re-discover Medellín's offices every poll (it has no open agenda yet,
+# so no office can be pinned; this also catches a new sede if one appears).
+159|*|357|1|21|Medellín (any office) - RUT persona natural
